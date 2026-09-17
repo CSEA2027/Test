@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <!-- Brand Logo -->
+    <a href="#" class="nav-logo">BrandName</a>
+
+    <!-- Mobile Menu Button -->
+    <button class="nav-toggle" (click)="toggleMenu()" aria-label="Toggle navigation">
+      <span class="bar" [class.open]="isMenuOpen"></span>
+      <span class="bar" [class.open]="isMenuOpen"></span>
+      <span class="bar" [class.open]="isMenuOpen"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a href="#" (click)="isMenuOpen = false">Home</a></li>
+      <li><a href="#" (click)="isMenuOpen = false">About</a></li>
+      <li><a href="#" (click)="isMenuOpen = false">Services</a></li>
+      <li><a href="#" (click)="isMenuOpen = false">Contact</a></li>
+    </ul>
+  </div>
+</nav>
